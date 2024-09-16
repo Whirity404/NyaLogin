@@ -2,7 +2,7 @@
 session_start();
 require 'header.php';
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
+    header("location: main.php");
     exit;
 }
 ?>
@@ -17,7 +17,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <div>
         <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
         <p>
-            <a href="logout.php">Sign Out</a>
+            <a href="main.php?logout">Sign Out</a>
         </p>
     </div>    
 </body>

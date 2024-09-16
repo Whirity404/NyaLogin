@@ -21,15 +21,15 @@
     </a>
   </div>
   <div class="mdui-tab mdui-color-theme" mdui-tab>
-    <a href="index.php" class="mdui-ripple mdui-ripple-white">
+    <a href="main.php?login" onclick="loadPage('login.php')" class="mdui-ripple mdui-ripple-white">
       <i class="mdui-icon material-icons">backup</i>
       <label>Login</label>
     </a>
-    <a href="register.php" class="mdui-ripple mdui-ripple-white">
+    <a href="main.php?register" onclick="loadPage('register.php')" class="mdui-ripple mdui-ripple-white">
       <i class="mdui-icon material-icons">add</i>
       <label>Register</label>
     </a>
-    <a href="logout.php" class="mdui-ripple mdui-ripple-white">
+    <a href="main.php?logout" onclick="loadPage('logout.php')" class="mdui-ripple mdui-ripple-white">
       <i class="mdui-icon material-icons">exit_to_app</i>
       <label>Logout</label>
     </a>
